@@ -5,11 +5,12 @@
  - `images` - примеры изображений;
  - `templates` - макет страницы;
  - `app.py` - исполняемый файл;
- - `Dockerfile`, `requirements.txt` - файлы Docker
+ - `Dockerfile`, `requirements.txt` - файлы Docker.
 
 Команды Docker:
 
- : docker build -t image_classifier .
- : docker run -d -p 5050:5050 image_classifier
+ docker build -t image_name .
+ 
+ docker run -d -p 5050:5050 image_name
 
   
