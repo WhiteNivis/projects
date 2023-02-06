@@ -1,11 +1,15 @@
-## [Deploy модели классификации изображений](https://github.com/WhiteNivis/projects/tree/main/deploy_image_classifier)
+# [Deploy модели классификации изображений](https://github.com/WhiteNivis/projects/tree/main/deploy_image_classifier)
 
-Деплой модели осуществляется с помощью PyCharm и Flask.
+Ресурсы:
 
-`images` - папка для хранения загруженных в web-приложение изображений
+ - `images` - примеры изображений;
+ - `templates` - макет страницы;
+ - `app.py` - исполняемый файл;
+ - `Dockerfile`, `requirements.txt` - файлы Docker
 
-`templates` - папка с шаблонами html
+Команды Docker:
 
-В качестве предобученной модели используется VGG16 из Keras.
+ : docker build -t image_classifier .
+ : docker run -d -p 5050:5050 image_classifier
 
-
+  
